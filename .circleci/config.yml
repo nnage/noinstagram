@@ -23,7 +23,7 @@ jobs:
       - run:
           name: Commit changes
           command: |
-            git config user.email "${CIRCLE_USERNAME}@gmail.com"
+            git config user.email "nnage@tuta.io"
             git config user.name "CircleCI"
             changes=$(git status --short ./docs/index.html);
             if [ -n "$changes" ]; then
